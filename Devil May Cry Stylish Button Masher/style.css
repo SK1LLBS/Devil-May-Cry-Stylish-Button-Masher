@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(IMG/6254118870.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.game-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4px solid #ff3300;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 51, 0, 0.7);
+    backdrop-filter: blur(5px); 
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 2.8em;
+    text-shadow: 0 0 10px #ff3300;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #ccc;
+    margin-bottom: 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9em;
+}
+
+.game-ui {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9em;
+}
+
+.score-container .combo-container .rank-container {
+    font-size: 1.1em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#rank {
+    color: #ffcc00;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff3300;
+}
+
+.key-display {
+    margin: 30px 0;
+}
+
+#target-key {
+    font-size: 6em;
+    font-weight: bold;
+    color: #ff3300;
+    text-shadow: 0 0 15px rgba(255, 51, 0, 0.9);
+    margin: 20px 0;
+    transition: transform 0.1s;
+} 
+
+.key-animate {
+    animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+.timer-container {
+    width: 100%;
+    height: 15px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#timer-bar {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #ff3300, #ffcc00);
+    border-radius: 10px;
+    transition: width 0.1s linear;
+}
+
+.hint {
+    color: #999;
+    font-size: 0.8em;
+    font-family: 'Press Start 2P', cursive;
+}

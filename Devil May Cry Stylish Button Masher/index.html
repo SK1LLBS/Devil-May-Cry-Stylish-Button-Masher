@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devil May Cry: Stylish Mash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>DEVIL MAY CRY: <span class="tylish-text">STYLISH MASH</span></h1>
+        <p class="subtitle">Нажимай правильные кнопки, как настоящий охотник на демонов!</p>
+
+        <div class="game-ui">
+            <div class="score-container">
+                <span>Счёт: </span>
+                <span id="score">0</span>
+            </div>
+            <div class="combo-container">
+                <span>Комбо: </span>
+                <span id="combo">0</span>
+            </div>
+            <div class="rank-container">
+                <span>Ранг: </span>
+                <span id="rank">Dull</span>
+            </div>
+        </div>
+
+        <div class="key-display">
+            <p>Нажми:</p>
+            <div id="target-key" class="key-animate">A</div>
+        </div>
+
+        <div class="timer-container">
+            <div id="timer-bar"></div>
+        </div>
+
+        <div class="hint">
+            <p>Используйте клавиши <strong>W, A, S, D, J, K, L, I, O, P</strong></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
